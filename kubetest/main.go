@@ -370,9 +370,9 @@ func complete(o *options) error {
 			}
 		}
 	}
-	if err := validWorkingDirectory(); err != nil {
-		return fmt.Errorf("called from invalid working directory: %v", err)
-	}
+	// if err := validWorkingDirectory(); err != nil {
+	// 	return fmt.Errorf("called from invalid working directory: %v", err)
+	// }
 
 	if o.down {
 		// listen for signals such as ^C and gracefully attempt to clean up
